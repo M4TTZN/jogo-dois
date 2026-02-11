@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jornada Social e Escolar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-wrapper">
+        <header>
+            <h1>Jornada Social e Escolar</h1>
+            <p>Aprenda a se comportar no dia a dia!</p>
+        </header>
+
+        <div id="board-container">
+            <div id="board"></div>
+        </div>
+
+        <div class="game-ui">
+            <div class="dice-section">
+                <div id="dice-visual">?</div>
+                <button id="roll-btn" onclick="rollDice()">🎲 Rolar Dado</button>
+            </div>
+            <div id="status-box">Sua vez! Role o dado para caminhar.</div>
+        </div>
+    </div>
+
+    <div id="modal" class="modal hidden">
+        <div class="modal-content">
+            <h2 id="modal-title">Caminho Social</h2>
+            <p id="modal-text"></p>
+            <button onclick="closeModal()">Entendi!</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
